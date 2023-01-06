@@ -1,28 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
 
+
 * {
     margin: 0
 } 
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #3c4979;
+    color: #e0e0e0;
+    padding: 2em;
+}
+
+nav label {
+    font-size: 24px;
+}
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
-    background-color: #e1e3ea;
-    height: 100vh;
+    padding: 50px 0px;
+    height: auto;
     font-family: sans-serif;
 }
 
 .app {
-    width: 100%;
+    width: 70%;
+    margin: 1px auto;
 }
 
-@media (max-width:768px) {
-    .app {
-    width: 90%;
-    }
-}
+
 
 .app h1 {
     color: white;
@@ -110,4 +121,118 @@
 .completed {
     color: rgba(192, 192, 192, 0.8);
     text-decoration: line-through;
+}
+
+
+footer {
+    background-color: #3c4979;
+    color: #a7a7a7;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+
+footer .row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+}
+
+footer .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    min-height: 15em;
+}
+
+footer h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+footer li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+footer ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #2a8ded;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+footer input,
+footer button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+footer button {
+    background-color: #c7940a;
+    color: #ffffff;
+}
+
+div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+.social i {
+    color: #bac6d9;
+}
+
+.copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+}
+
+.footer-menu{
+    float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.footer-menu a:hover{
+    color: #27bcda;
+}
+.copyright p {
+    font-size: 0.9em;
+    text-align: right;
 }

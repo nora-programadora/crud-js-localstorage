@@ -1,0 +1,24 @@
+
+@media (max-width:768px) {
+
+    .app {
+        width: 90%;
+    }
+
+    footer .row.primary {
+        display: inline;
+    }
+
+    footer {
+        background-color: transparent;
+        color: #a7a7a7;
+        font-size: 16px;
+        position: relative;
+        bottom: 0;
+        display: inline;
+    }
+
+    footer div {
+        background-color: #121315;
+    }
+}
